@@ -5,5 +5,3 @@ class PagesController < ApplicationController
   end
   def course
 end
-def testimonials
-end

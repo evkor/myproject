@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   get 'course' => 'pages#course'
 
   #get 'pages/testimonials'
-  get 'testimonials' => 'pages#testimonials'
+  #get 'testimonials' => 'pages#testimonials'
+  resources :testimonials, only: [:index]
+
   #root  'pages#course'
 
   # The priority is based upon order of creation: first created -> highest priority.
