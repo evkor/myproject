@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   #get 'pages/home'
   root  'pages#home'
 
@@ -7,7 +9,7 @@ Rails.application.routes.draw do
 
   #get 'pages/testimonials'
   #get 'testimonials' => 'pages#testimonials'
-  resources :testimonials, only: [:index]
+  resources :testimonials, only: [:index, :new, :show]
 
   #root  'pages#course'
 
