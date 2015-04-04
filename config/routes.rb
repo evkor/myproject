@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   #get 'pages/testimonials'
   #get 'testimonials' => 'pages#testimonials'
-  resources :testimonials, only: [:index, :new, :show]
+  resources :testimonials, only: [:index, :new, :show, :create]
 
   #root  'pages#course'
 
