@@ -1,6 +1,7 @@
 class TestimonialsController < ApplicationController
 
   def index
+    @testimonials = Testimonial.all
   end
 
   def new
@@ -26,3 +27,4 @@ class TestimonialsController < ApplicationController
     params.require(:testimonial).permit(:user_name, :feedback)
   end
 end
+
